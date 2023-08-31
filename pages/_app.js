@@ -2,7 +2,8 @@ import '../styles/globals.css';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Welcome from '../components/Welcome';
-import Apropos from '../components/Apropos';
+import About from '../components/About';
+import Catalogue from '../components/Catalogue';
 
 function App({ Component, pageProps }) {
   return (
@@ -12,7 +13,8 @@ function App({ Component, pageProps }) {
       </Head>
       <Header />
       <Welcome/>
-      <Apropos/>
+      <Catalogue/>
+      <About/>
       <Component {...pageProps} />
     </>
   );
