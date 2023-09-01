@@ -1,20 +1,17 @@
 import '../styles/globals.css';
 import Head from 'next/head';
 import Header from '../components/Header';
-import Welcome from '../components/Welcome';
-import About from '../components/About';
-import Catalogue from '../components/Catalogue';
+import Footer from '../components/Footer';
 
 function App({ Component, pageProps }) {
+
   return (
     <>
       <Head>
-        <title>Next.js App</title>
+        <title>Pépinières de Judicarré</title>
       </Head>
       <Header />
-      <Welcome/>
-      <Catalogue/>
-      <About/>
+      {/* <Footer /> */}
       <Component {...pageProps} />
     </>
   );

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Welcome() {
   return (
-<main className="lg:h-screen w-screen flex justify-center">
+<main id="accueil" className="lg:h-screen w-screen flex justify-center scroll-mt-14">
      <div className="absolute h-1/2 lg:h-full top-14 w-screen z-0"> 
       <Image
         src="/images/welcome.jpg"

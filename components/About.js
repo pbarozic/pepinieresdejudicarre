@@ -12,11 +12,11 @@ function About() {
   }, []);
 
   return (
-    <div className="mt-14 lg:mt-0 min-h-screen w-screen flex flex-row flex-wrap">
+    <div id="about" className="mt-14 lg:mt-0 min-h-screen w-screen flex flex-row flex-wrap scroll-mt-14">
       <div className="min-h-screen w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-between items-center">
         <div className='w-full flex flex-col justify-center items-center'>
           <h1> NOTRE HISTOIRE</h1>
-          <hr className="w-1/4 bg-black h-2 mt-2" />
+          <hr className="w-1/4 bg-teal-950 h-2 mt-2" />
         </div>
         <p>Créées en 1985 par Daniel Rozic sur les terres agricoles de la famille Rozic à Locunolé dans le Sud Finistère, les Pépinières de Judicarré sont spécialisées dans les végétaux d’ornement.  Depuis plus de 30 ans, nous avons tissé des relations de confiance avec les professionnels du paysage, les jardineries, ainsi que les collectivités de la Région.
         </p>
@@ -48,7 +48,7 @@ function About() {
         <div className='w-full flex flex-col justify-center items-center'>
 
           <h1>UNE PRODUCTION DURABLE</h1>
-          <hr className="w-1/4 bg-black h-2 mt-2" />
+          <hr className="w-1/4 bg-teal-950 h-2 mt-2" />
         </div>
         <div className='h-5/6 flex flex-col justify-around	items-center'>
           <div className="flex flex-col lg:flex-row justify-around items-center w-full h-1/2 p-4">
@@ -89,16 +89,17 @@ function About() {
         </div>
 
       </div>
-      <div className="min-h-screen w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-around items-center bg-teal-950">
+      <div className="h-96 lg:h-screen w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-around items-center bg-teal-950">
       
-        <h3 className="font-bold text-8xl text-white text-center">DÉCOUVREZ NOS NOMBREUSES VARIÉTÉS</h3>
-        <button className="bg-teal-900 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded">
+        <h3 className="font-bold text-6xl lg:text-8xl text-white text-center">DÉCOUVREZ NOS NOMBREUSES VARIÉTÉS</h3>
+        <a href="/varietes" className="bg-teal-900 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded">
 Notre catalogue
-</button>
+</a>
       </div>
       <div className="hidden lg:h-screen h-1/2 lg:w-1/2 w-full lg:flex relative">
           <Image src="/images/histoire4.jpg" alt="photo de plantes en ligne" layout='fill'
             objectFit='cover' />
+      
       </div>
       
     </div>

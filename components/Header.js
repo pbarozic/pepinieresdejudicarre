@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './NavBar';
+import Navbar from './NavigationBar';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
@@ -10,8 +10,9 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center h-full w-screen">
                 <div className="h-full flex items-center lg:w-2/12">
                     <div className="ml-2 h-full">
-
+                        <a href="/">
                         <Image src="/logo/logo.png" alt="Logo" width={40} height={40} />
+                        </a>
                     </div>
 
                     <div className="ml-2 h-full lg:hidden">
@@ -19,7 +20,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="h-full w-2/12 lg:w-8/12 flex justify-center items-center">
-                    <NavBar />
+                    <Navbar />
                 </div>
                 <div className="h-full w-2/12 lg:w-2/12 hidden lg:flex flex justify-end items-center">
                     <a href="https://www.facebook.com/pepinieredejudicarre/" target="_blank" rel="noopener noreferrer">
