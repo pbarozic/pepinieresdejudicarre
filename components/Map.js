@@ -1,40 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GoogleMap, LoadScript, InfoWindow, Marker } from '@react-google-maps/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
-
 const Map = () => {
-
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-
 
   const defaultCenter = { lat: 47.92628398257208, lng: -3.499929938033899 };
   const defaultZoom = 10;
 
+  const [infoWindowOpen, setInfoWindowOpen] = useState(false);
 
   return (
     <LoadScript googleMapsApiKey={apiKey}>
-
       <GoogleMap
         center={defaultCenter}
         zoom={defaultZoom}
         mapContainerStyle={{ width: '90%', height: '100%' }}
         options={{ styles }}
+
       >
-                    <Marker position={defaultCenter}>
-        <FontAwesomeIcon icon={faLocationDot}/>
-        {/* <InfoWindow>
-              <div>Pépinières de Judicarré</div>
-            </InfoWindow> */}
-                </Marker>
+        <Marker
+          position={defaultCenter}
+          onClick={() => setInfoWindowOpen(true)}
+        >
+          <FontAwesomeIcon icon={faLocationDot} />
+        </Marker>
+
+        {infoWindowOpen && (
+          <InfoWindow
+            position={defaultCenter} // Set the position of the InfoWindow
+            onCloseClick={() => setInfoWindowOpen(false)}
+          >
+            <div>
+              <p>Pépinières de Judicarré</p>
+              <p>Lieu-dit Judicarré 29310 Locunolé</p>
+            </div>
+          </InfoWindow>
+        )}
       </GoogleMap>
- 
     </LoadScript>
   );
 };
 
 export default Map;
+
 
 
   
