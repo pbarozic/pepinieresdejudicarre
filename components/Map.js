@@ -5,10 +5,10 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 
 const Map = () => {
-  // Replace with your Google Maps API key
-  const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
-  // Specify the center coordinates and zoom level
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+
   const defaultCenter = { lat: 47.92628398257208, lng: -3.499929938033899 };
   const defaultZoom = 10;
 
