@@ -2,8 +2,6 @@ import React from 'react';
 import Link from 'next/link'
 
 import Map from './Map';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
 

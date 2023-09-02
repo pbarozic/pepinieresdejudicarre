@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 function Catalogue() {
 
   return (
-    <div className="mt-14 h-screen w-screen flex flex-wrap">
+    <div className="h-screen w-screen flex flex-wrap">
       <div className="hidden h-screen lg:w-1/2 lg:flex items-center justify-center relative">
         <Image src="/images/red-plant.jpg" alt="photo de plantes en ligne" layout='fill'
           objectFit='cover' />
@@ -36,7 +36,7 @@ function Catalogue() {
             </p>
 
             <a href="#contact" className="bg-teal-950 hover:bg-teal-900 text-white font-bold py-2 px-4 rounded cursor-pointer">
-              Contactez-vous
+              Contactez-nous
             </a>
 
           </div>

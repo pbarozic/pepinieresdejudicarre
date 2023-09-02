@@ -1,12 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Navbar from './NavigationBar';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
+    const router = useRouter();
+    const [headerVisible, setHeaderVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0 && router.pathname === '/') {
+                setHeaderVisible(true);
+            } else if (router.pathname === '/') {
+                setHeaderVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [router.pathname]);
+
+    const handleMouseEnter = () => {
+        if (router.pathname === '/') {
+            setHeaderVisible(true);
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (router.pathname === '/' && window.scrollY === 0) {
+            setHeaderVisible(false);
+        }
+    };
+
     return (
-        <header className="bg-teal-950 h-14 w-screen p-2 fixed top-0 z-50">
+        <header
+            className={`bg-teal-950 h-14 w-screen p-2 fixed top-0 z-50 transition-opacity ${
+                router.pathname === '/' && (headerVisible ? 'opacity-100' : 'opacity-0')
+            }`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
             <div className="container mx-auto flex justify-between items-center h-full w-screen">
                 <div className="h-full flex items-center lg:w-2/12">
                     <div className="ml-2 h-full">
