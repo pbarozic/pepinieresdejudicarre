@@ -15,7 +15,7 @@ function Contact() {
 
                     <p>Téléphone :<a href="tel:0298063065"><b> 02 98 06 30 65</b></a></p>
 
-                    <p >E-mail :<a href="pepinieredejudicarre@wanadoo.fr"><b>  pepinieredejudicarre@wanadoo.fr</b></a></p>
+                    <p >E-mail :<a href="mailto:pepinieredejudicarre@wanadoo.fr"><b>  pepinieredejudicarre@wanadoo.fr</b></a></p>
                     </div>
 
                 </div>

@@ -186,6 +186,80 @@ const Navbar = () => {
                                     href="/varietes"
                                     className="hover:bg-teal-900 px-3 py-2 text-4xl rounded cursor-pointer"
                                 >Nos variétés</a>
+                                 <ul className="space-y-2 ml-4">
+                                <li>
+                                    <a
+                                        href="/nouveautes"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Nouveautés</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="arbres-arbustes"
+                                        className="hover-bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Arbres et Arbustes</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="terres-bruyeres"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Terres de bruyère</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="plantes-grimpantes"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Plantes grimpantes</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="fougeres"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Fougères</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="bambous"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Bambous</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="graminees"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Graminées</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="vivaces"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Vivaces</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="arbustes-fruitiers"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Arbustes Fruitiers</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="arbres-petits-conteneurs"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Petits conteneurs</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="arbres-fruitiers"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Arbres Fruitiers</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="mediterranneennes"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Méditerranéennes</a>
+                                </li>
+                            </ul>
                             </li>
                             <li>
                                 <a
@@ -200,7 +274,6 @@ const Navbar = () => {
                                     className="hover:bg-teal-900 px-3 py-2 text-4xl rounded cursor-pointer"
                                 >Contact</a>
                             </li>
-                            {/* Add more menu items as needed */}
                         </ul>
                     </div>
                 </div>
