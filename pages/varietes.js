@@ -3,7 +3,16 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
 
-function Index() {
+function Varietes() {
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
 
   const varietiesArray = [
     {
@@ -14,54 +23,54 @@ function Index() {
     {
       title: "Plantes de Terre de Bruyère",
       imgSrc: "/images/terres-bruyere.jpg",
-      path: "/arbres-arbustes"
+      path: "/terres-bruyeres"
 
     },
     {
       title: "Plantes grimpantes",
       imgSrc: "/images/plantes-grimpantes.jpg",
-      path: "/arbres-arbustes"
+      path: "/plantes-grimpantes"
 
     },
     {
       title: "Fougères",
       imgSrc: "/images/fougeres.jpg",
-      path: "/arbres-arbustes"
+      path: "/fougeres"
 
     },
     {
       title: "Bambous",
       imgSrc: "/images/bambou.jpg",
-      path: "/arbres-arbustes"
+      path: "/bambous"
 
     },
     {
       title: "Graminées",
       imgSrc: "/images/graminees.jpg",
-      path: "/arbres-arbustes"
+      path: "/graminees"
 
     },
     {
       title: "Vivaces",
       imgSrc: "/images/vivaces.jpg",
-      path: "/arbres-arbustes"
+      path: "/vivaces"
 
     },
     {
       title: "Arbustes Fruitiers",
       imgSrc: "/images/arbustes-fruitiers.jpg",
-      path: "/arbres-arbustes"
+      path: "/arbres-fruitiers"
 
     },
     {
       title: "Arbres petits conteneurs",
       imgSrc: "/images/petits-conteneurs.jpg",
-      path: "/arbres-arbustes"
+      path: "/arbres-petits-conteneurs"
 
     },
   ];
 
-  function VarieteSquares({ text, imgSrc }) {
+  function VarieteSquares({ text, imgSrc, path }) {
     const [hovered, setHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -73,21 +82,21 @@ function Index() {
     };
 
     return (
-      <div
+      <a href={path}
         className='lg:w-1/3 w-full relative cursor-pointer'
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         <div className='m-4'>
           <div className='aspect-ratio-square w-full h-full relative z-0' style={{ paddingBottom: "100%" }}>
-            <h3 className={`absolute top-0 left-0 text-center w-full h-full text-6xl text-white p-4 flex items-center justify-center z-20 ${hovered ? 'font-bold' : ''}`}>
+            <h3 className={`absolute top-0 left-0 text-center w-full h-full text-5xl text-white p-4 flex items-center justify-center z-20 ${hovered ? 'font-bold' : ''}`}>
               {text}
             </h3>
             <Image src={imgSrc} alt={text} layout='fill' objectFit='cover' className='z-0' />
             <div className={`absolute inset-0 bg-teal-950 ${hovered ? 'opacity-10' : 'opacity-20'} z-0`}></div>
           </div>
         </div>
-      </div>
+      </a>
     );
   }
 
@@ -104,7 +113,7 @@ function Index() {
           </div>
         </div>
         <div className='h-full w-5/6 relative z-10 flex flex-col justify-around items-center'>
-          <h3 className='text-8xl font-bold text-white text-center'>
+          <h3 className='text-7xl leading-relaxed font-bold text-white text-center'>
             DE NOMBREUSES VARIÉTÉS POUR CORRESPONDRE À TOUS VOS BESOINS
           </h3>
           <p className='text-white'>
@@ -113,12 +122,14 @@ function Index() {
         </div>
       </div>
 
-      <div className='h-1/3 w-full mb-4 flex justify-center cursor-pointer'>
+      <div className='h-1/3 w-full mb-4 flex justify-center cursor-pointer'
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}>
         <div className='h-1/3 w-full px-8 absolute z-0'>
           <div className='h-full w-full relative'>
-            <Image src="/images/nouveautes-banner.jpg" alt="photo de plantes en ligne" layout='fill' objectPosition="50% 7%"
+            <Image src="/images/nouveautes-banner.jpg" alt="photo de plantes en ligne" layout='fill' objectPosition="50% 7%" objectFit='cover' />
+            <div className={`absolute inset-0 bg-teal-950 ${hovered ? 'opacity-10' : 'opacity-20'} z-0`}></div>
 
-              objectFit='cover' />
             <div className="absolute inset-0 bg-teal-950 opacity-30 z-0"></div>
           </div>
         </div>
@@ -134,34 +145,43 @@ function Index() {
             key={index} // Always provide a unique key when mapping over elements
             text={item.title}
             imgSrc={item.imgSrc}
+            path={item.path}
           />
         ))}
         <VarieteSquares
           key={30} // Always provide a unique key when mapping over elements
           text="Arbres Fruitiers"
           imgSrc="/images/arbres-fruitiers.jpg"
+          path="/arbres-fruitiers"
         />
 
-        <div
+        <a href="/livraisons"
           className='lg:w-1/3 w-full relative cursor-pointer'
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           <div className='m-4'>
             <div className='aspect-ratio-square w-full h-full relative z-0 bg-teal-950' style={{ paddingBottom: "100%" }}>
               <div className="h-full w-full absolute top-0 left-0 flex flex-col justify-center items-center">
-              <h3 className='text-center text-6xl text-white z-20'>
+                
+              <h3 className={`text-center text-6xl text-white z-20 ${hovered && 'text-emerald-700'}`}>
                 Livraison
               </h3>
-             <FontAwesomeIcon className="text-white cursor-pointer w-1/2 h-1/2 mt-3" icon={faTruck} />
+
+             <FontAwesomeIcon className={`text-white cursor-pointer w-1/2 h-1/2 mt-3  ${hovered && 'text-emerald-700'}`} icon={faTruck} />
              </div>
             </div>
+
           </div>
-        </div>
+        </a>
 
 
         <VarieteSquares
           key={30} // Always provide a unique key when mapping over elements
           text="Gamme méditérannéenne"
           imgSrc="/images/gamme-mediterranneenne.jpg"
+          path="/mediterranneennes"
+
         />
       </div>
 
@@ -170,4 +190,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Varietes;

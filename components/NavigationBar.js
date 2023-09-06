@@ -73,13 +73,13 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="arbres-et-arbustes"
+                                        href="arbres-arbustes"
                                         className="hover-bg-teal-900 px-3 py-2 rounded cursor-pointer"
                                     >Arbres et Arbustes</a>
                                 </li>
                                 <li>
                                     <a
-                                        href="bruyere"
+                                        href="terres-bruyeres"
                                         className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
                                     >Terres de bruyère</a>
                                 </li>
@@ -121,7 +121,7 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="petits-conteneurs"
+                                        href="arbres-petits-conteneurs"
                                         className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
                                     >Petits conteneurs</a>
                                 </li>
@@ -133,7 +133,7 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="méditérrannéennes"
+                                        href="mediterranneennes"
                                         className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
                                     >Méditerranéennes</a>
                                 </li>

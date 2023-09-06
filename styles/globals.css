@@ -1,20 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Quicksand:wght@300&family=Sen&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
     h1 {
-      @apply font-bold text-2xl lg:text-3xl text-teal-950;
+      @apply font-bold font-sen text-2xl lg:text-3xl text-teal-950;
     }
 
     h2 {
-        @apply font-bold text-xl lg:text-2xl text-teal-950;
+        @apply font-bold font-sen text-xl lg:text-2xl text-teal-950;
     }
     p {
-      @apply text-base lg:text-xl text-teal-950;
+      @apply font-sen text-base lg:text-xl text-teal-950;
     }
+    a {
+      @apply font-sen
+
+    }
+    li {
+      @apply font-sen
+
+    }
+    h3 {@apply font-js}
   }
+
+  /* In your CSS or Tailwind CSS configuration */
+@layer utilities {
+  .text-with-underline {
+    margin-bottom: 0.5rem; /* Adjust this value to control the space */
+    text-decoration: underline;
+  }
+}
+  
+
 
   * { 
     scroll-behavior: smooth;
