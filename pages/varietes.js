@@ -83,7 +83,7 @@ function Varietes() {
 
     return (
       <a href={path}
-        className='lg:w-1/3 w-full relative cursor-pointer'
+        className={`lg:w-1/3 w-full relative cursor-pointer ${text=='Nouveautés' && 'lg:hidden'}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -102,29 +102,30 @@ function Varietes() {
 
 
   return (
-    <div className='mt-14 h-screen flex flex-wrap justify-center'>
+    <div className='mt-14 h-screen flex lg:flex-row flex-wrap justify-center'>
 
-      <div className='h-4/6 flex justify-center mb-8'>
-        <div className='h-4/6 w-full absolute z-0'>
+      <div className='h-1/2 lg:h-4/6 flex justify-center lg:mb-8'>
+        <div className='h-1/2 lg:h-4/6 w-full absolute z-0'>
           <div className='h-full w-full relative'>
             <Image src="/images/banner-variete.jpg" alt="photo de plantes en ligne" layout='fill'
               objectFit='cover' />
             <div className="absolute inset-0 bg-teal-950 opacity-40 z-0"></div>
           </div>
         </div>
-        <div className='h-full w-5/6 relative z-10 flex flex-col justify-around items-center'>
-          <h3 className='text-7xl leading-relaxed font-bold text-white text-center'>
+        <div className='h-5/6 lg:h-full w-full lg:w-5/6 relative z-10 flex flex-col justify-around items-center'>
+          <h3 className='text-4xl lg:text-7xl lg:leading-relaxed font-bold text-white text-center'>
             DE NOMBREUSES VARIÉTÉS POUR CORRESPONDRE À TOUS VOS BESOINS
           </h3>
-          <p className='text-white'>
+          <p className='text-white text-center'>
             Vous trouverez dans notre catalogue une large gamme de végétaux.
           </p>
         </div>
       </div>
 
-      <div className='h-1/3 w-full mb-4 flex justify-center cursor-pointer'
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}>
+      <a href="/nouveautes"
+        className='hidden h-1/3 w-full mb-4 lg:flex justify-center cursor-pointer'
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
         <div className='h-1/3 w-full px-8 absolute z-0'>
           <div className='h-full w-full relative'>
             <Image src="/images/nouveautes-banner.jpg" alt="photo de plantes en ligne" layout='fill' objectPosition="50% 7%" objectFit='cover' />
@@ -137,19 +138,27 @@ function Varietes() {
           <h3 className='pb-10 text-6xl font-bold text-white text-center'>
             Découvrez nos nouveautés        </h3>
         </div>
-      </div>
+      </a>
 
-      <div className='h-screen w-full mx-4 flex flex-col lg:flex-row justify-center lg:flex-wrap'>
+      <div className='h-min-screen h-full w-full lg:mx-4 flex lg:flex-row justify-center items-center flex-wrap'>
+      <VarieteSquares
+          key={32} 
+          text="Nouveautés"
+          imgSrc="/images/nouveautes-banner.jpg"
+          path="/nouveautes"
+        />
+
         {varietiesArray.map((item, index) => (
           <VarieteSquares
-            key={index} // Always provide a unique key when mapping over elements
+            key={index} 
             text={item.title}
             imgSrc={item.imgSrc}
             path={item.path}
           />
         ))}
+
         <VarieteSquares
-          key={30} // Always provide a unique key when mapping over elements
+          key={30} 
           text="Arbres Fruitiers"
           imgSrc="/images/arbres-fruitiers.jpg"
           path="/arbres-fruitiers"
@@ -163,13 +172,13 @@ function Varietes() {
           <div className='m-4'>
             <div className='aspect-ratio-square w-full h-full relative z-0 bg-teal-950' style={{ paddingBottom: "100%" }}>
               <div className="h-full w-full absolute top-0 left-0 flex flex-col justify-center items-center">
-                
-              <h3 className={`text-center text-6xl text-white z-20 ${hovered && 'text-emerald-700'}`}>
-                Livraison
-              </h3>
 
-             <FontAwesomeIcon className={`text-white cursor-pointer w-1/2 h-1/2 mt-3  ${hovered && 'text-emerald-700'}`} icon={faTruck} />
-             </div>
+                <h3 className={`text-center text-6xl text-white z-20 ${hovered && 'text-emerald-700'}`}>
+                  Livraison
+                </h3>
+
+                <FontAwesomeIcon className={`text-white cursor-pointer w-1/2 h-1/2 mt-3  ${hovered && 'text-emerald-700'}`} icon={faTruck} />
+              </div>
             </div>
 
           </div>
@@ -177,7 +186,7 @@ function Varietes() {
 
 
         <VarieteSquares
-          key={30} // Always provide a unique key when mapping over elements
+          key={31} // Always provide a unique key when mapping over elements
           text="Gamme méditérannéenne"
           imgSrc="/images/gamme-mediterranneenne.jpg"
           path="/mediterranneennes"

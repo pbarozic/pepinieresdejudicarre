@@ -91,7 +91,7 @@ function About() {
       </div>
       <div className="h-96 lg:h-screen w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-around items-center bg-teal-950">
       
-        <h3 className="font-bold font-ant lg:leading-relaxed text-7xl lg:text-8xl text-white text-center">DÉCOUVREZ NOS NOMBREUSES VARIÉTÉS</h3>
+        <h3 className="font-bold font-ant lg:leading-relaxed text-5xl lg:text-8xl text-white text-center">DÉCOUVREZ NOS NOMBREUSES VARIÉTÉS</h3>
         <a href="/varietes" className="bg-teal-900 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded">
 Notre catalogue
 </a>
