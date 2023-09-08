@@ -192,6 +192,7 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li className=''>
+                                <div className='flex items-center'>
                             <a
                                     href="/varietes"
                                     className="hover:bg-teal-900 px-3 py-2 text-4xl rounded cursor-pointer"
@@ -200,12 +201,16 @@ const Navbar = () => {
                                   
                                 </a>
                                 {isSubMenuOpen ? (
+                                    <div className='w-6 h-6'>
                                         <FontAwesomeIcon icon={faAngleUp} className="ml-2 cursor-pointer" onClick={toggleSubMenu}
                                         />
-                                    ) : (
+                                        </div>
+                                    ) : (                                    <div className='w-6 h-6'>
+
                                         <FontAwesomeIcon icon={faAngleDown} className="ml-2 cursor-pointer" onClick={toggleSubMenu}
-                                        />
-                                    )}
+                                        />                                        </div>
+
+                                    )}</div>
                                 {isSubMenuOpen && (
                                  <ul className="space-y-2 ml-4">
                                  <li>
