@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
+
 const Navbar = () => {
     const [isSubMenuOpen, setSubMenuOpen] = useState(false);
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
     return (
         <nav className="text-white p-4">
             {/* Add a button for the hamburger menu */}
-            <button
+         <button
               onClick={toggleMenu}
               className="lg:hidden text-white hover:text-gray-700 focus:outline-none"
             >

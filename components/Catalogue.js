@@ -35,12 +35,12 @@ function Catalogue() {
               N'hésitez pas à nous envoyer un mail ou à nous appeler si vous souhaitez recevoir notre nouveau catalogue.
             </p>
 
-            <a href="#contact" className="bg-teal-950 hover:bg-teal-900 text-white font-bold py-2 px-4 rounded cursor-pointer">
+            <a href="#contact" className="bg-teal-950 hover:bg-teal-900 text-white font-bold mt-4 py-2 px-4 rounded cursor-pointer">
               Contactez-nous
             </a>
 
           </div>
-          <div className='px-2 lg:w-1/2 h-screen lg:h-full relative'>
+          <div className='px-2 w-full lg:w-1/2 h-screen lg:h-full relative'>
             <Image src="/images/catalogue.jpg" alt="photo de plantes en ligne" layout='fill'
               objectFit='contain' />
           </div>

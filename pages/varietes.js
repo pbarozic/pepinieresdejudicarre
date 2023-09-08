@@ -158,6 +158,7 @@ function Varietes() {
           />
         ))}
 
+        <div className="w-screen flex pb-8">
         <VarieteSquares
           key={30} 
           text="Arbres Fruitiers"
@@ -189,10 +190,9 @@ function Varietes() {
           text="Gamme méditérannéenne"
           imgSrc="/images/gamme-mediterranneenne.jpg"
           path="/mediterranneennes"
-
         />
       </div>
-
+      </div>
 
     </div>
   );

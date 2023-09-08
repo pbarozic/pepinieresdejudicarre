@@ -32,18 +32,18 @@ function About() {
       </div>
       <div className="hidden lg:h-screen h-1/2 lg:w-1/2 w-full lg:flex">
         <div className="h-screen w-1/2 relative">
-          <Image src="/images/histoire5.jpg" alt="photo de plantes en ligne" layout='fill'
+          <Image src="/images/histoire5.jpg" alt="photo de plantes" layout='fill'
             objectFit='cover' />
         </div>
         <div className="h-screen w-1/2 relative">
-          <Image src="/images/histoire2.jpg" alt="photo de serre" layout='fill'
+          <Image src="/images/histoire2.jpg" alt="photo de plantes" layout='fill'
             objectFit='cover' />
         </div>
       </div>
 
 
       <div className="h-screen lg:w-1/2 w-screen p-4 hidden lg:flex relative">
-        <Image src="/images/histoire3.jpg" alt="photo de serre" layout='fill'
+        <Image src="/images/histoire3.jpg" alt="photo de plantes" layout='fill'
           objectFit='cover' />
       </div>
       <div className="lg:h-screen h-1/2 lg:w-1/2 w-full  flex flex-col justify-between p-4 items-center">
