@@ -23,16 +23,9 @@
 
     }
     h3 {@apply font-sen font-bold}
-  }
 
-  /* In your CSS or Tailwind CSS configuration */
-@layer utilities {
-  .text-with-underline {
-    margin-bottom: 0.5rem; /* Adjust this value to control the space */
-    text-decoration: underline;
+    b {@apply font-sen}
   }
-}
-  
 
 
   * { 

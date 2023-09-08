@@ -1,7 +1,7 @@
-import Welcome from '../components/Welcome';
-import About from '../components/About';
-import Catalogue from '../components/Catalogue';
-import Contact from '../components/Contact';
+import Welcome from "../components/Welcome";
+import About from "../components/About";
+import Catalogue from "../components/Catalogue";
+import Contact from "../components/Contact";
 
 function Index() {
   return (
