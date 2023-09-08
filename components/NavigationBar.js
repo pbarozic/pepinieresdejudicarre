@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     const [isSubMenuOpen, setSubMenuOpen] = useState(false);
@@ -24,6 +24,10 @@ const Navbar = () => {
 
     const closeModal = () => {
         setMenuOpen(false);
+    };
+    
+    const toggleSubMenu = () => {
+        setSubMenuOpen(!isSubMenuOpen);
     };
 
     return (
@@ -65,6 +69,12 @@ const Navbar = () => {
                             className="absolute w-48 left-0 mt-2 p-2 bg-teal-950 rounded-lg shadow-lg"
                         >
                             <ul className="space-y-2">
+                            <li>
+                                    <a
+                                        href="/toutes-varietes"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Toutes les variétés</a>
+                                </li>
                                 <li>
                                     <a
                                         href="/nouveautes"
@@ -155,11 +165,11 @@ const Navbar = () => {
 
             {/* Modal menu for small screens */}
             {isMenuOpen && (
-            <div className="fixed top-0 left-0 w-full h-full bg-teal-950 opacity-90 z-50">
+            <div className="fixed top-0 left-0 w-screen h-screen bg-teal-950 opacity-95 z-50">
             <div className="container mx-auto h-full flex flex-col justify-center items-center">
                         {/* Add a button to close the modal */}
                         <button
-                            className="absolute text-2xl top-4 right-4"
+                            className="absolute text-2xl top-4 right-8"
                             onClick={closeModal}
                         >
                             ✕
@@ -181,12 +191,29 @@ const Navbar = () => {
                                 >À propos
                                 </a>
                             </li>
-                            <li>
-                                <a
+                            <li className=''>
+                            <a
                                     href="/varietes"
                                     className="hover:bg-teal-900 px-3 py-2 text-4xl rounded cursor-pointer"
-                                >Nos variétés</a>
+                                >
+                                    Variétés
+                                  
+                                </a>
+                                {isSubMenuOpen ? (
+                                        <FontAwesomeIcon icon={faAngleUp} className="ml-2 cursor-pointer" onClick={toggleSubMenu}
+                                        />
+                                    ) : (
+                                        <FontAwesomeIcon icon={faAngleDown} className="ml-2 cursor-pointer" onClick={toggleSubMenu}
+                                        />
+                                    )}
+                                {isSubMenuOpen && (
                                  <ul className="space-y-2 ml-4">
+                                 <li>
+                                    <a
+                                        href="/toutes-varietes"
+                                        className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
+                                    >Toutes les variétés</a>
+                                </li>
                                 <li>
                                     <a
                                         href="/nouveautes"
@@ -259,7 +286,7 @@ const Navbar = () => {
                                         className="hover:bg-teal-900 px-3 py-2 rounded cursor-pointer"
                                     >Méditerranéennes</a>
                                 </li>
-                            </ul>
+                            </ul>)}
                             </li>
                             <li>
                                 <a

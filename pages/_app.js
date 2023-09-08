@@ -11,7 +11,7 @@ function App({ Component, pageProps }) {
         <title>Pépinières de Judicarré</title>
       </Head>
       <Header />
-      {/* <Footer /> */}
+      <Footer />
       <Component {...pageProps} />
     </>
   );

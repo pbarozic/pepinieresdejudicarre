@@ -116,9 +116,10 @@ function Varietes() {
           <h3 className='text-4xl lg:text-7xl lg:leading-relaxed font-bold text-white text-center'>
             DE NOMBREUSES VARIÉTÉS POUR CORRESPONDRE À TOUS VOS BESOINS
           </h3>
-          <p className='text-white text-center'>
-            Vous trouverez dans notre catalogue une large gamme de végétaux.
-          </p>
+          <a href="/toutes-varietes" className="bg-slate-100 hover:bg-white text-teal-950 font-bold py-2 px-4 rounded cursor-pointer">
+              Découvrir
+            </a>
+
         </div>
       </div>
 
@@ -165,19 +166,17 @@ function Varietes() {
         />
 
         <a href="/livraisons"
-          className='lg:w-1/3 w-full relative cursor-pointer'
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+            className='lg:w-1/3 w-full relative cursor-pointer'
         >
           <div className='m-4'>
-            <div className='aspect-ratio-square w-full h-full relative z-0 bg-teal-950' style={{ paddingBottom: "100%" }}>
+            <div className='aspect-ratio-square w-full h-full relative z-0 bg-teal-950 hover:bg-teal-900' style={{ paddingBottom: "100%" }}>
               <div className="h-full w-full absolute top-0 left-0 flex flex-col justify-center items-center">
 
-                <h3 className={`text-center text-6xl text-white z-20 ${hovered && 'text-emerald-700'}`}>
+              <h3 className='text-center text-6xl text-white z-20'>
                   Livraison
                 </h3>
 
-                <FontAwesomeIcon className={`text-white cursor-pointer w-1/2 h-1/2 mt-3  ${hovered && 'text-emerald-700'}`} icon={faTruck} />
+                <FontAwesomeIcon className='text-white cursor-pointer w-1/2 h-1/2 mt-3' icon={faTruck} />
               </div>
             </div>
 

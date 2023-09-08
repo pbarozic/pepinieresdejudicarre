@@ -12,7 +12,7 @@ function Catalogue() {
           objectFit='cover' />
         <div className="absolute inset-0 bg-teal-950 opacity-30 z-0"></div>
 
-        <h3 className="relative font-ant text-white lg:text-7xl text-6xl z-1 mx-6">Plus de 100 nouvelles variétés cette saison</h3>
+        <h3 className="relative font-sen font-bold text-white lg:text-7xl text-6xl z-1 mx-6 pl-4">Plus de 100 nouvelles variétés cette saison</h3>
       </div>
       <div className="h-screen lg:w-1/2 w-full  text-teal-950 pt-14 p-4 lg:pt-6 flex flex-col flew-wrap">
         <div className='w-full flex flex-col justify-center items-center'>
@@ -20,7 +20,7 @@ function Catalogue() {
           <hr className="w-1/6 bg-teal-950 h-2 mt-2" />
         </div>
         <div className='flex flex-col lg:flex-row h-full w-full'>
-          <div className='lg:w-1/2 h-full flex flex-col justify-between items-center px-2 py-14'>
+          <div className='lg:w-1/2 h-full flex flex-col justify-between items-center pl-2 pr-6 py-14'>
           <p>
               Notre nouveau catalogue 2022 - 2024, destiné aux professionnels du métier, est  enfin prêt ! Il contient les tarifs de nos 1500 variétés, dont 100 nouvelles variétés.
             </p>

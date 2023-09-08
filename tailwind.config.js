@@ -14,7 +14,6 @@ module.exports = {
       sen : ["Sen","sans-serif"],
       qs: ["Quicksand", "sans-serif"],
       js: ["Josefin Sans","sans-serif"]
-
     },
   },
   plugins: [],

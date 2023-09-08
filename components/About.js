@@ -18,7 +18,7 @@ function About() {
           <h1> NOTRE HISTOIRE</h1>
           <hr className="w-1/6 bg-teal-950 h-2 mt-2" />
         </div>
-        <p>Créées en 1985 par Daniel Rozic sur les terres agricoles de la famille Rozic à Locunolé dans le Sud Finistère, les Pépinières de Judicarré sont spécialisées dans les végétaux d’ornement.  Depuis plus de 30 ans, nous avons tissé des relations de confiance avec les professionnels du paysage, les jardineries, ainsi que les collectivités de la Région.
+        <p className='px-4'>Créées en 1985 par Daniel Rozic sur les terres agricoles de la famille Rozic à Locunolé dans le Sud Finistère, les Pépinières de Judicarré sont spécialisées dans les végétaux d’ornement.  Depuis plus de 30 ans, nous avons tissé des relations de confiance avec les professionnels du paysage, les jardineries, ainsi que les collectivités de la Région.
         </p>
         <h2>Livraisons dans toute la France.</h2>
         {
@@ -32,7 +32,7 @@ function About() {
       </div>
       <div className="hidden lg:h-screen h-1/2 lg:w-1/2 w-full lg:flex">
         <div className="h-screen w-1/2 relative">
-          <Image src="/images/histoire1.jpg" alt="photo de plantes en ligne" layout='fill'
+          <Image src="/images/histoire5.jpg" alt="photo de plantes en ligne" layout='fill'
             objectFit='cover' />
         </div>
         <div className="h-screen w-1/2 relative">
@@ -40,6 +40,8 @@ function About() {
             objectFit='cover' />
         </div>
       </div>
+
+
       <div className="h-screen lg:w-1/2 w-screen p-4 hidden lg:flex relative">
         <Image src="/images/histoire3.jpg" alt="photo de serre" layout='fill'
           objectFit='cover' />
@@ -91,7 +93,7 @@ function About() {
       </div>
       <div className="h-96 lg:h-screen w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-around items-center bg-teal-950">
       
-        <h3 className="font-bold font-ant lg:leading-relaxed text-5xl lg:text-8xl text-white text-center">DÉCOUVREZ NOS NOMBREUSES VARIÉTÉS</h3>
+        <h3 className="font-sen font-bold  lg:leading-relaxed text-5xl lg:text-7xl text-white text-center">DÉCOUVREZ NOS NOMBREUSES VARIÉTÉS</h3>
         <a href="/varietes" className="bg-teal-900 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded">
 Notre catalogue
 </a>

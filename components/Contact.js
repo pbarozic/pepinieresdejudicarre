@@ -6,7 +6,7 @@ import Map from './Map';
 function Contact() {
 
     return (
-        <div id="contact" className="scroll-smooth mt-14 h-screen w-screen flex flex-col bg-white scroll-mt-14">
+        <div id="contact" className="scroll-smooth mt-14 mb-24 h-screen w-screen flex flex-col bg-white scroll-mt-14">
             <div className='w-screen flex flex-col lg:flex-row items-center lg:h-1/3'>
                 <div className='flex flex-col items-center lg:w-1/3 h-40'>
                     <h1>NOUS TROUVER</h1>
@@ -23,10 +23,10 @@ function Contact() {
                     <h1>HORAIRES</h1>
                     <div className='mt-6'>
                     <p>Lun - Ven :<b>  8h30 - 12H30</b></p>
-                    <p className="lg:pl-24 pl-20 font-bold">14h30 - 17h30</p>
+                    <p className="lg:pl-20 pl-16 font-bold">14h30 - 17h30</p>
                     </div>
                 </div>
-                <div className='flex flex-col items-center lg:w-1/3 h-40'>
+                <div className='hidden lg:flex flex-col items-center lg:w-1/3 h-40'>
                     <h1>AIDE</h1>
                     <div className='flex flex-col mt-6'>
 
