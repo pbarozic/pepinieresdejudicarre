@@ -107,7 +107,7 @@ function Varietes() {
       <div className='h-1/2 lg:h-4/6 flex justify-center lg:mb-8'>
         <div className='h-1/2 lg:h-4/6 w-full absolute z-0'>
           <div className='h-full w-full relative'>
-            <Image src="/images/banner-variete.jpg" alt="photo de plantes en ligne" layout='fill'
+            <Image src="/images/banner-variete.jpg" alt="Rameau d'olivier au coucher de soleil" layout='fill'
               objectFit='cover' />
             <div className="absolute inset-0 bg-teal-950 opacity-40 z-0"></div>
           </div>
@@ -129,7 +129,7 @@ function Varietes() {
         onMouseLeave={handleMouseLeave}>
         <div className='h-1/3 w-full px-8 absolute z-0'>
           <div className='h-full w-full relative'>
-            <Image src="/images/nouveautes-banner.jpg" alt="photo de plantes en ligne" layout='fill' objectPosition="50% 7%" objectFit='cover' />
+            <Image src="/images/nouveautes-banner.jpg" alt="fleurs blanches sur fond vert" layout='fill' objectPosition="50% 7%" objectFit='cover' />
             <div className={`absolute inset-0 bg-teal-950 ${hovered ? 'opacity-10' : 'opacity-20'} z-0`}></div>
 
             <div className="absolute inset-0 bg-teal-950 opacity-30 z-0"></div>

@@ -8,7 +8,7 @@ function Catalogue() {
   return (
     <div className="h-screen w-screen flex flex-wrap">
       <div className="hidden h-screen lg:w-1/2 lg:flex items-center justify-center relative">
-        <Image src="/images/red-plant.jpg" alt="photo de plantes en ligne" layout='fill'
+        <Image src="/images/red-plant.jpg" alt="photo d'une plante avec fleur rouge'" layout='fill'
           objectFit='cover' />
         <div className="absolute inset-0 bg-teal-950 opacity-30 z-0"></div>
 
@@ -41,7 +41,7 @@ function Catalogue() {
 
           </div>
           <div className='px-2 w-full lg:w-1/2 h-screen lg:h-full relative'>
-            <Image src="/images/catalogue.jpg" alt="photo de plantes en ligne" layout='fill'
+            <Image src="/images/catalogue.jpg" alt="photo de la couverture du catalogue 2022-2023 de la pépinière" layout='fill'
               objectFit='contain' />
           </div>
         </div>

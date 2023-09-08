@@ -32,18 +32,18 @@ function About() {
       </div>
       <div className="hidden lg:h-screen h-1/2 lg:w-1/2 w-full lg:flex">
         <div className="h-screen w-1/2 relative">
-          <Image src="/images/histoire5.jpg" alt="photo de plantes" layout='fill'
+          <Image src="/images/histoire5.jpg" alt="rangées de plantes dans la pépinière" layout='fill'
             objectFit='cover' />
         </div>
         <div className="h-screen w-1/2 relative">
-          <Image src="/images/histoire2.jpg" alt="photo de plantes" layout='fill'
+          <Image src="/images/histoire2.jpg" alt="Intérieur d'une serre dans la pépinière" layout='fill'
             objectFit='cover' />
         </div>
       </div>
 
 
       <div className="h-screen lg:w-1/2 w-screen p-4 hidden lg:flex relative">
-        <Image src="/images/histoire3.jpg" alt="photo de plantes" layout='fill'
+        <Image src="/images/histoire3.jpg" alt="Intérieur d'une serre dans la pépinière" layout='fill'
           objectFit='cover' />
       </div>
       <div className="lg:h-screen h-1/2 lg:w-1/2 w-full  flex flex-col justify-between p-4 items-center">
@@ -76,7 +76,7 @@ function About() {
           </div>
           <div className="flex flex-col lg:flex-row justify-around items-center w-full h-1/2 p-4">
             <div className='w-2/5 h-11/12  flex justify-center items-center'>
-              <Image src="/certifications/plante-bleue.jpg" alt="logo certification plante bleur" width={150} height={150} />
+              <Image src="/certifications/plante-bleue.jpg" alt="logo certification plante bleue" width={150} height={150} />
             </div>
 
             <div className='lg:w-3/5'>
@@ -99,7 +99,7 @@ Notre catalogue
 </a>
       </div>
       <div className="hidden lg:h-screen h-1/2 lg:w-1/2 w-full lg:flex relative">
-          <Image src="/images/histoire4.jpg" alt="photo de plantes en ligne" layout='fill'
+          <Image src="/images/histoire4.jpg" alt="Intérieur d'une serre dans la pépinière" layout='fill'
             objectFit='cover' />
       
       </div>

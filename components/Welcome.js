@@ -8,7 +8,7 @@ function Welcome() {
         <div className='h-full w-full relative'>
         <Image
           src="/images/welcome.jpg"
-          alt="Background Image"
+          alt="Image de fond représentant un olivier zoomé sur une rameau"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
@@ -23,7 +23,7 @@ function Welcome() {
       <div className='h-full w-1/3 relative mx-2'>
       <Image
               src="/logo/logo.png"
-              alt="Logo"
+              alt="Logo image"
               layout="fill"
               objectFit="contain"
               className="max-w-full h-auto"
@@ -35,7 +35,7 @@ function Welcome() {
       <div className=" h-1/2 w-full relative">
       <Image
             src="/logo/text-blanc.png"
-            alt="Logo"
+            alt="Logo texte"
             layout="fill"
             objectFit="contain"
             className="max-w-full h-auto"
