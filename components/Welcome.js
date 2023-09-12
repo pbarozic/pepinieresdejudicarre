@@ -5,7 +5,7 @@ function Welcome() {
   return (
     <main
       id="accueil"
-      className="lg:h-screen h-96 w-screen flex justify-center items-center scroll-mt-14"
+      className="lg:h-screen h-72 w-screen flex justify-center items-center scroll-mt-14"
     >
       <div className="h-1/2 lg:h-full w-screen absolute">
         <div className="h-full w-full relative">

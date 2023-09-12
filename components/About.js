@@ -16,19 +16,19 @@ function About() {
       id="about"
       className="mt-14 lg:mt-0 min-h-screen w-screen flex flex-row flex-wrap scroll-mt-14"
     >
-      <div className="min-h-screen w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-between items-center">
+      <div className="w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-between items-center">
         <div className="w-full flex flex-col justify-center items-center">
           <h1> NOTRE HISTOIRE</h1>
           <hr className="w-1/6 bg-teal-950 h-2 mt-2" />
         </div>
-        <p className="px-4">
+        <p className="p-4">
           Créées en 1985 par Daniel Rozic sur les terres agricoles de la famille
           Rozic à Locunolé dans le Sud Finistère, les Pépinières de Judicarré
           sont spécialisées dans les végétaux d’ornement. Depuis plus de 30 ans,
           nous avons tissé des relations de confiance avec les professionnels du
           paysage, les jardineries, ainsi que les collectivités de la Région.
         </p>
-        <h2>Livraisons dans toute la France.</h2>
+        <h2 className="p-4">Livraisons dans toute la France.</h2>
         {hasWindow && (
           <ReactPlayer
             url="https://www.youtube.com/watch?v=e3OLFgOgmLY"

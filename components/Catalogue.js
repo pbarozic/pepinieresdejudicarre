@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 function Catalogue() {
   return (
     <div className="h-screen w-screen flex flex-wrap">
-      <div className="hidden h-screen lg:w-1/2 lg:flex items-center justify-center relative">
+      <div className="hidden h-screen w-screen lg:w-1/2 lg:flex items-center justify-center relative">
         <Image
           src="/images/red-plant.jpg"
           alt="photo d'une plante avec fleur rouge'"
