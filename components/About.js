@@ -14,7 +14,7 @@ function About() {
   return (
     <div
       id="about"
-      className="mt-14 lg:mt-0 min-h-screen w-screen flex flex-row flex-wrap scroll-mt-14"
+      className="lg:mt-0 min-h-screen w-screen flex flex-row flex-wrap scroll-mt-14"
     >
       <div className="w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-between items-center">
         <div className="w-full flex flex-col justify-center items-center">

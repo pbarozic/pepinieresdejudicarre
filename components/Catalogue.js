@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 function Catalogue() {
   return (
-    <div className="h-screen w-screen flex flex-wrap">
+    <div className="h-min-screen w-screen flex flex-wrap">
       <div className="hidden h-screen w-screen lg:w-1/2 lg:flex items-center justify-center relative">
         <Image
           src="/images/red-plant.jpg"
@@ -20,27 +20,27 @@ function Catalogue() {
           Plus de 100 nouvelles variétés cette saison
         </h3>
       </div>
-      <div className="h-screen lg:w-1/2 w-full  text-teal-950 pt-14 p-4 lg:pt-6 flex flex-col flew-wrap">
+      <div className="h-min-screen lg:w-1/2 w-full  text-teal-950 pt-14 p-4 lg:pt-6 flex flex-col flew-wrap">
         <div className="w-full flex flex-col justify-center items-center">
           <h1> NOUVEAU CATALOGUE</h1>
           <hr className="w-1/6 bg-teal-950 h-2 mt-2" />
         </div>
         <div className="flex flex-col lg:flex-row h-full w-full">
-          <div className="lg:w-1/2 h-full flex flex-col justify-between items-center pl-2 pr-6 py-14">
-            <p>
+          <div className="lg:w-1/2 flex flex-col justify-between items-center pl-2 pr-6 py-4 lg:py-14">
+            <p className="py-2">
               Notre nouveau catalogue 2022 - 2024, destiné aux professionnels du
               métier, est enfin prêt ! Il contient les tarifs de nos 1500
               variétés, dont 100 nouvelles variétés.
             </p>
 
-            <p>
+            <p className="py-2">
               Vous y trouverez l'ensemble de nos plantes : Arbres et Arbustes,
               Plantes de Terre de Bruyère, Plantes Grimpantes, Fougères,
               Bambous, Graminées, Vivaces, Arbustes Fruitiers, Plantes
               Méditérrannéennes...
             </p>
 
-            <p>
+            <p className="py-2">
               N'hésitez pas à nous envoyer un mail ou à nous appeler si vous
               souhaitez recevoir notre nouveau catalogue.
             </p>
