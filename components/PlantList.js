@@ -4,8 +4,10 @@ function PlantList({ famille }) {
   const [plants, setPlants] = useState([]);
   const [filter, setFilter] = useState("");
 
+const backendLink = 'https://pepinieresjudicarre-backend.vercel.app/'
+
   useEffect(() => {
-    fetch(`https://pepinieresjudicarre-backend.vercel.app/${famille}`)
+    fetch(`${backendLink}${famille}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.data) {

@@ -72,12 +72,13 @@ function About() {
         <div className="h-5/6 flex flex-col justify-around	items-center">
           <div className="flex flex-col lg:flex-row justify-around items-center w-full h-1/2 p-4">
             <div className="lg:w-2/5 h-11/12 flex justify-center items-center  ">
-              <Image
-                src="/certifications/fleurs-de-france.jpg"
-                alt="logo certification fleur de france"
-                width={150}
-                height={150}
+            <Image
+                src="/certifications/plante-bleue.jpg"
+                alt="logo certification plante bleue"
+                width={100}
+                height={100}
               />
+
             </div>
             <div className="lg:w-3/5">
               <h2>Certification Plante Bleue</h2>
@@ -97,11 +98,11 @@ function About() {
           </div>
           <div className="flex flex-col lg:flex-row justify-around items-center w-full h-1/2 p-4">
             <div className="w-2/5 h-11/12  flex justify-center items-center">
-              <Image
-                src="/certifications/plante-bleue.jpg"
-                alt="logo certification plante bleue"
-                width={150}
-                height={150}
+            <Image
+                src="/certifications/fleurs-de-france.jpg"
+                alt="logo certification fleur de france"
+                width={130}
+                height={130}
               />
             </div>
 
