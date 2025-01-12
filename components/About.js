@@ -22,7 +22,7 @@ function About() {
           <hr className="w-1/6 bg-teal-950 h-2 mt-2" />
         </div>
         <p className="p-4">
-          Créées en 1985 par Daniel Rozic sur les terres agricoles de la famille
+          Créées en 1985 par Daniel Rozic et Philippe Duchêne sur les terres agricoles de la famille
           Rozic à Locunolé dans le Sud Finistère, les Pépinières de Judicarré
           sont spécialisées dans les végétaux d’ornement. Depuis plus de 30 ans,
           nous avons tissé des relations de confiance avec les professionnels du
