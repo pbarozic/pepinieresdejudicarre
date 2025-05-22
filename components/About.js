@@ -96,21 +96,24 @@ function About() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row justify-around items-center w-full h-1/2 p-4">
-            <div className="w-2/5 h-11/12  flex justify-center items-center">
-            <Image
-                src="/certifications/fleurs-de-france.jpg"
-                alt="logo certification fleur de france"
-                width={130}
-                height={130}
-              />
-            </div>
+         {/*
+<div className="flex flex-col lg:flex-row justify-around items-center w-full h-1/2 p-4">
+  <div className="w-2/5 h-11/12  flex justify-center items-center">
+    <Image
+      src="/certifications/fleurs-de-france.jpg"
+      alt="logo certification fleur de france"
+      width={130}
+      height={130}
+    />
+  </div>
 
-            <div className="lg:w-3/5">
-              <h2>Certification Fleurs de France</h2>
-              <p>Le signe de reconnaissance des végétaux produits en France.</p>
-            </div>
-          </div>
+  <div className="lg:w-3/5">
+    <h2>Certification Fleurs de France</h2>
+    <p>Le signe de reconnaissance des végétaux produits en France.</p>
+  </div>
+</div>
+*/}
+
         </div>
       </div>
       <div className="h-96 lg:h-screen w-full lg:w-1/2 text-teal-950 p-4 flex flex-col justify-around items-center bg-teal-950">
