@@ -54,7 +54,7 @@ function Catalogue() {
           </div>
           <div className="px-2 w-full lg:w-1/2 h-96 lg:h-full relative">
             <Image
-              src="/images/catalogue.jpg"
+              src="/images/new-catalogue.jpg"
               alt="photo de la couverture du catalogue 2022-2023 de la pépinière"
               layout="fill"
               objectFit="contain"
