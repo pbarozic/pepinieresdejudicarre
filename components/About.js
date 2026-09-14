@@ -22,16 +22,15 @@ function About() {
           <hr className="w-1/6 bg-teal-950 h-2 mt-2" />
         </div>
         <p className="p-4">
-          Créées en 1985 par Daniel Rozic et Philippe Duchêne sur les terres agricoles de la famille
-          Rozic à Locunolé dans le Sud Finistère, les Pépinières de Judicarré
-          sont spécialisées dans les végétaux d’ornement. Depuis plus de 30 ans,
-          nous avons tissé des relations de confiance avec les professionnels du
-          paysage, les jardineries, ainsi que les collectivités de la Région.
+          Implantées à Locunolé, dans le Sud-Finistère en Bretagne, les Pépinières de Judicarré produisent depuis 40 ans une large gamme de végétaux d’ornement destinés aux professionnels du paysage, aux jardineries et aux collectivités.
+Créées en 1985 par Daniel Rozic et Philippe Duchêne sur les terres agricoles de la famille Rozic, les Pépinières de Judicarré se sont développées au fil des années en cultivant des relations de confiance avec leurs clients et en s’appuyant sur un savoir-faire de producteur reconnu.
+Aujourd’hui, sur 12 hectares de production, dont 4 hectares couverts, nous cultivons près de 1 500 variétés d’arbres, arbustes, vivaces, graminées, plantes de terre de bruyère, bambous et autres végétaux.
+Depuis début 2026, les Pépinières de Judicarré ont été reprises par un trio complémentaire : Claire-Alice Rozic, la fille de Daniel, Tony Mao, présent depuis plus de 10 ans aux Pépinières et bras droit de Daniel Rozic, et Emmanuel Gasnier, présent depuis plus de 5 ans et en charge de la partie commerciale.
         </p>
         <h2 className="p-4">Livraisons dans toute la France.</h2>
         {hasWindow && (
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=e3OLFgOgmLY"
+            url="https://www.youtube.com/watch?v=7-S8BLbyKOA"
             width="80%"
             controls="true"
           />
