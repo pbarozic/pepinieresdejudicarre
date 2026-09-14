@@ -28,7 +28,7 @@ function Catalogue() {
         <div className="flex flex-col lg:flex-row h-full w-full">
           <div className="lg:w-1/2 flex flex-col justify-between items-center pl-2 pr-6 py-4 lg:py-14">
             <p className="py-2">
-              Notre nouveau catalogue 2022 - 2024, destiné aux professionnels du
+              Notre nouveau catalogue 2026 - 2028, destiné aux professionnels du
               métier, est enfin prêt ! Il contient les tarifs de nos 1500
               variétés, dont 100 nouvelles variétés.
             </p>
